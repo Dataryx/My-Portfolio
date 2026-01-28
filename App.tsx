@@ -749,7 +749,7 @@ const App: React.FC = () => {
         <section id="skills" className="relative scroll-mt-24">
           <div className="flex flex-col items-center mb-10 reveal">
             <div className="bg-[#F7D117] text-black p-4 border-4 border-black rounded-t-xl studs shadow-[0_8px_0px_#bfa111]">
-              <h2 className="brick-font text-3xl md:text-5xl uppercase">The Component Library</h2>
+              <h2 className="brick-font text-3xl md:text-5xl uppercase">Data Engineering Core</h2>
             </div>
             <div className="w-full h-2 bg-black"></div>
           </div>
@@ -759,7 +759,7 @@ const App: React.FC = () => {
         <section id="projects" className="relative scroll-mt-24">
           <div className="flex flex-col items-start mb-10 reveal-left">
             <div className="bg-[#237841] text-white p-4 border-4 border-black rounded-tr-xl rounded-bl-xl studs shadow-[0_8px_0px_#17522b]">
-              <h2 className="brick-font text-3xl md:text-5xl uppercase">Master Build Sets</h2>
+              <h2 className="brick-font text-3xl md:text-5xl uppercase">Project Build Sets</h2>
             </div>
           </div>
           <Projects />
@@ -768,7 +768,7 @@ const App: React.FC = () => {
         <section id="experience" className="relative scroll-mt-24">
           <div className="flex flex-col items-center mb-10 reveal">
             <div className="bg-[#009EE0] text-white p-4 border-4 border-black rounded-t-xl studs shadow-[0_8px_0px_#003a82]">
-              <h2 className="brick-font text-3xl md:text-5xl uppercase tracking-tighter">Construction History</h2>
+              <h2 className="brick-font text-3xl md:text-5xl uppercase tracking-tighter">Career Build Log</h2>
             </div>
             <div className="w-full h-2 bg-black"></div>
           </div>
@@ -801,7 +801,7 @@ const App: React.FC = () => {
         <section id="blog" className="relative scroll-mt-24">
           <div className="flex items-center gap-6 mb-8 reveal-left">
             <div className="bg-[#E35500] text-white px-4 py-2 border-[3px] border-black studs shadow-[4px_4px_0px_black]">
-              <h2 className="brick-font text-xl uppercase tracking-tighter">Mini-Build Logs</h2>
+              <h2 className="brick-font text-xl uppercase tracking-tighter">Mini Blogs</h2>
             </div>
             <div className="flex-1 h-1 bg-black/10"></div>
           </div>
@@ -939,17 +939,17 @@ const App: React.FC = () => {
               <div className="space-y-3">
                 <span className="brick-font text-sm text-blue-600 border-b-2 border-blue-600 pb-1">Navigation</span>
                 <ul className="space-y-1.5 text-[10px] font-bold uppercase underline decoration-2 decoration-red-500 underline-offset-4">
-                  <li><a href="#hero" className="hover:text-red-500 transition-colors">Start Assembly</a></li>
-                  <li><a href="#about" className="hover:text-red-500 transition-colors">The Creator</a></li>
-                  <li><a href="#skills" className="hover:text-red-500 transition-colors">Part Inventory</a></li>
-                  <li><a href="#projects" className="hover:text-red-500 transition-colors">Finished Sets</a></li>
+                  <li><a href="#hero" className="hover:text-red-500 transition-colors">Home</a></li>
+                  <li><a href="#about" className="hover:text-red-500 transition-colors">About</a></li>
+                  <li><a href="#skills" className="hover:text-red-500 transition-colors">Skills</a></li>
+                  <li><a href="#projects" className="hover:text-red-500 transition-colors">Projects</a></li>
                 </ul>
               </div>
               <div className="space-y-3">
                 <span className="brick-font text-sm text-green-600 border-b-2 border-green-600 pb-1">Channels</span>
                 <ul className="space-y-1.5 text-[10px] font-bold uppercase">
-                  <li><a href="#" className="hover:text-green-600 transition-colors flex items-center gap-2"><span className="w-2 h-2 bg-green-600 rounded-full"></span>GitHub</a></li>
-                  <li><a href="#" className="hover:text-green-600 transition-colors flex items-center gap-2"><span className="w-2 h-2 bg-green-600 rounded-full"></span>LinkedIn</a></li>
+                  <li><a href="https://github.com/Dataryx" className="hover:text-green-600 transition-colors flex items-center gap-2"><span className="w-2 h-2 bg-green-600 rounded-full"></span>GitHub</a></li>
+                  <li><a href="www.linkedin.com/in/sumitsingh43" className="hover:text-green-600 transition-colors flex items-center gap-2"><span className="w-2 h-2 bg-green-600 rounded-full"></span>LinkedIn</a></li>
                 </ul>
               </div>
             </div>

@@ -67,21 +67,21 @@ const Contact: React.FC = () => {
         <div className="space-y-6">
           <div className="flex items-center gap-3 text-green-700">
             <Link size={24} />
-            <span className="brick-font text-lg uppercase tracking-widest">JOINT: STABLE</span>
+            <span className="brick-font text-lg uppercase tracking-widest">STATUS: AVAILABLE</span>
           </div>
           <h2 className="brick-font text-[9vw] lg:text-[6vw] leading-[0.8] uppercase text-black">
             SNAP_ <br /><span className="text-red-600">IN.</span>
           </h2>
           <p className="text-xl font-black uppercase tracking-tight leading-none text-black/60">
-            Select a <span className="underline decoration-4 decoration-yellow-400 underline-offset-8">connector</span> to begin the assembly.
+            Select a <span className="underline decoration-4 decoration-yellow-400 underline-offset-8">channel</span> to connect.
           </p>
         </div>
 
         <div className="space-y-4">
           {[
-            { label: 'UPLINK', val: 'BLOCKS@BRICK.DEV', color: 'bg-red-600', icon: Mail },
-            { label: 'LOCALE', val: 'SYDNEY // BASEPLATE 1', color: 'bg-blue-600', icon: MapPin },
-            { label: 'RELAY', val: '@BRICK_BUILDER', color: 'bg-yellow-400', icon: Hash },
+            { label: 'Email', val: 'sumit_singh43@hotmail.com', color: 'bg-red-600', icon: Mail },
+            { label: 'LOCATION', val: 'Fullerton, California', color: 'bg-blue-600', icon: MapPin },
+            { label: 'Contact', val: '+1 (657) 706-2315', color: 'bg-yellow-400', icon: Hash },
           ].map((item) => (
             <div key={item.label} className="flex items-center gap-4 group cursor-pointer brick-card p-4 bg-white hover:bg-black hover:text-white transition-all">
               <div className={`w-12 h-12 ${item.color} text-white flex items-center justify-center border-4 border-black rounded-lg transition-all group-hover:rotate-12 studs`}>
@@ -100,7 +100,7 @@ const Contact: React.FC = () => {
         <div className="absolute top-0 right-0 p-12 opacity-[0.03] brick-font text-[18vw] select-none pointer-events-none uppercase">BUILD</div>
 
         <div className="flex justify-between items-center border-b-8 border-black pb-6 mb-8">
-           <h3 className="brick-font text-3xl uppercase italic leading-none opacity-80">Message Pack</h3>
+           <h3 className="brick-font text-3xl uppercase italic leading-none opacity-80">Send a Message</h3>
            <div className="flex gap-2">
               <div className={`w-5 h-5 border-2 border-black rounded-full ${Object.keys(errors).length > 0 ? 'bg-red-600 animate-pulse' : 'bg-red-600'}`}></div>
               <div className="w-5 h-5 bg-blue-600 border-2 border-black rounded-full"></div>
@@ -127,7 +127,7 @@ const Contact: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-1.5">
                 <label className="brick-font text-[10px] tracking-widest text-blue-600 flex justify-between">
-                  Your Identity {errors.name && <span className="text-red-600 flex items-center gap-1"><AlertTriangle size={8} /> {errors.name}</span>}
+                  Your Full Name {errors.name && <span className="text-red-600 flex items-center gap-1"><AlertTriangle size={8} /> {errors.name}</span>}
                 </label>
                 <input 
                   type="text" 
@@ -135,12 +135,12 @@ const Contact: React.FC = () => {
                   value={formData.name}
                   onChange={handleChange}
                   className={`w-full bg-gray-100 border-4 p-4 brick-font text-base outline-none transition-all placeholder:text-black/5 uppercase ${errors.name ? 'border-red-600 bg-red-50' : 'border-black focus:bg-white focus:border-red-600'}`}
-                  placeholder="Builder_Name"
+                  placeholder="Full Name"
                 />
               </div>
               <div className="space-y-1.5">
                 <label className="brick-font text-[10px] tracking-widest text-blue-600 flex justify-between">
-                  Return Route {errors.email && <span className="text-red-600 flex items-center gap-1"><AlertTriangle size={8} /> {errors.email}</span>}
+                  Email Address {errors.email && <span className="text-red-600 flex items-center gap-1"><AlertTriangle size={8} /> {errors.email}</span>}
                 </label>
                 <input 
                   type="email" 
@@ -148,13 +148,13 @@ const Contact: React.FC = () => {
                   value={formData.email}
                   onChange={handleChange}
                   className={`w-full bg-gray-100 border-4 p-4 brick-font text-base outline-none transition-all placeholder:text-black/5 uppercase ${errors.email ? 'border-red-600 bg-red-50' : 'border-black focus:bg-white focus:border-red-600'}`}
-                  placeholder="Email_Channel"
+                  placeholder="your@email.com"
                 />
               </div>
             </div>
             <div className="space-y-1.5">
               <label className="brick-font text-[10px] tracking-widest text-blue-600 flex justify-between">
-                Manifest Description {errors.message && <span className="text-red-600 flex items-center gap-1"><AlertTriangle size={8} /> {errors.message}</span>}
+                Message {errors.message && <span className="text-red-600 flex items-center gap-1"><AlertTriangle size={8} /> {errors.message}</span>}
               </label>
               <textarea 
                 name="message"
@@ -162,7 +162,7 @@ const Contact: React.FC = () => {
                 onChange={handleChange}
                 rows={3} 
                 className={`w-full bg-gray-100 border-4 p-4 brick-font text-base outline-none transition-all resize-none placeholder:text-black/5 uppercase ${errors.message ? 'border-red-600 bg-red-50' : 'border-black focus:bg-white focus:border-red-600'}`}
-                placeholder="What are we building?"
+                placeholder="Tell me what you want to build, discuss, or collaborate on…"
               ></textarea>
             </div>
             <button 
@@ -172,7 +172,7 @@ const Contact: React.FC = () => {
             >
               {isSubmitting ? 'TRANSMITTING...' : (
                 <>
-                  DISPATCH UPLINK 
+                  SEND MESSAGE 
                   <Send size={24} className="group-hover:translate-x-3 group-hover:-translate-y-3 transition-transform duration-500" />
                 </>
               )}
@@ -181,9 +181,9 @@ const Contact: React.FC = () => {
         )}
         
         <div className="flex justify-between brick-font text-[8px] opacity-20 uppercase pt-6">
-           <span>Model_Ref: B-2025</span>
-           <span>Prot: SNAP_LOCK</span>
-           <span>Quality: PLASTIC_GRADE_A</span>
+           <span>PROFILE_REF: DATA_ENGINEER</span>
+           <span>SYSTEM_ID: DE-PORTFOLIO</span>
+           <span>PORTFOLIO: 2026</span>
         </div>
       </div>
     </div>
