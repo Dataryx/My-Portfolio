@@ -902,9 +902,9 @@ const App: React.FC = () => {
           </div>
         </section>
 
-        <section id="ai" className="relative reveal-snap">
+        {/* <section id="ai" className="relative reveal-snap">
           <AIProjectAdvisor />
-        </section>
+        </section> */}
 
         <section id="contact" className="relative scroll-mt-24">
           <div className="flex justify-center mb-10 reveal-snap">
