@@ -774,9 +774,9 @@ const App: React.FC = () => {
           </div>
           <div className="space-y-6 stagger-container">
             {[
-              { year: '2023-Present', role: 'Lead Architect', company: 'CloudBlocks Inc.' },
-              { year: '2021-2023', role: 'Structural Engineer', company: 'DataStructure Ltd.' },
-              { year: '2019-2021', role: 'Junior Builder', company: 'Foundation Startup' },
+              { year: '2023-2024', role: 'Data Engineer', company: 'YCO Solutions Pvt. Ltd.' },
+              { year: '2021-2022', role: 'Associate Data Engineer', company: 'YCO Solutions Pvt. Ltd.' },
+              { year: '2020-2020', role: 'Software Engineering Intern', company: 'LIS Nepal Pvt. Ltd.' },
             ].map((exp, i) => (
               <div
                 key={i}
@@ -902,9 +902,9 @@ const App: React.FC = () => {
           </div>
         </section>
 
-        <section id="ai" className="relative reveal-snap">
+        {/* <section id="ai" className="relative reveal-snap">
           <AIProjectAdvisor />
-        </section>
+        </section> */}
 
         <section id="contact" className="relative scroll-mt-24">
           <div className="flex justify-center mb-10 reveal-snap">

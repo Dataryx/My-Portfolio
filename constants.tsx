@@ -4,30 +4,30 @@ import { Project, Skill } from './types';
 export const PROJECTS: Project[] = [
   {
     id: '1',
-    title: 'Nexus Cloud Dashboard',
-    description: 'A comprehensive cloud management platform built with React and AWS integration.',
+    title: 'Data Warehouse',
+    description: 'A comprehensive data Warehouse platform.',
     tags: ['React', 'TypeScript', 'AWS', 'Tailwind'],
-    image: 'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&q=80&w=800',
-    link: '#',
-    github: '#'
+    image: 'images/Data-warehouse.png',
+    link: 'https://github.com/Dataryx/Data-Warehouse.git',
+    github: 'https://github.com/Dataryx/Data-Warehouse.git'
   },
   {
     id: '2',
-    title: 'Quantum Ledger',
-    description: 'DeFi analytics engine providing real-time insights into multi-chain transactions.',
+    title: 'AI Powered Data Warehouse',
+    description: 'AI Powered Self Optimizing Data Warehouse that optimizes itself using machine learning algorithms.',
     tags: ['Next.js', 'Solidity', 'D3.js', 'Ethers.js'],
-    image: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&q=80&w=800',
-    link: '#',
-    github: '#'
+    image: 'images/Self-optimizing-data-warehouse.png',
+    link: 'https://github.com/Dataryx/AI_Powered_Self_Optimizing_Data_Warehouse.git',
+    github: 'https://github.com/Dataryx/AI_Powered_Self_Optimizing_Data_Warehouse.git'
   },
   {
     id: '3',
-    title: 'Sentinel AI',
-    description: 'Computer vision security system utilizing TensorFlow for real-time threat detection.',
+    title: 'Data Processing',
+    description: 'Data Processing',
     tags: ['Python', 'TensorFlow', 'OpenCV', 'React'],
-    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800',
-    link: '#',
-    github: '#'
+    image: 'images/Data-processing.png',
+    link: 'https://github.com/Dataryx/Data-processing',
+    github: 'https://github.com/Dataryx/Data-processing'
   },
   {
     id: '4',
